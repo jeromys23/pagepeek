@@ -1,0 +1,124 @@
+:root {
+    --main-bg-color: #121212;
+    --main-panel-bg-color: #1E1E1E;
+    --main-accent-color: #BB86FC;
+    --secondary-text-color: #AEAEAE;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+  body, input {
+    font-family: 'Mulish', sans-serif !important;
+  }
+
+  #popup-container {
+    color: var(--white);
+    min-width: 300px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+  } 
+
+  #logo {
+    padding: 1rem 0;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .empty-result-container {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #hidden-variables-wrapper {
+    display: none;
+  }
+
+
+  .logo-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  #logo-end {
+    color: var(--main-accent-color)
+  }
+
+  #refresh-container {
+    right: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  h2 {
+    color: var(--white);
+    margin-block-end: 0.25rem;
+  }
+
+  .bg {
+    background-color: var(--main-bg-color);
+  }
+
+  .main-text {
+    color: var(--white);
+  }
+
+  .accent-text {
+    color: var(--main-accent-color);
+  }
+
+  .secondary-text {
+    color: var(--secondary-text-color);
+  }
+
+  .hidden-variable-row {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .hidden-variable-row > div {
+    padding: 0.25rem;
+  }
+
+  .flex-box {
+    padding: 1rem;
+  }
+
+  .hidden-variable-name {
+    transition: all 0.25s ease;
+    background: var(--main-panel-bg-color);
+    border: none;
+    outline: none;
+    color: var(--secondary-text-color);
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+  }
+
+  .hidden-variable-name:hover {
+    color: var(--white);
+  }
+
+  .hidden-variable-value {
+    color: var(--main-accent-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+  }  
+
+  .panel {
+    background-color: var(--main-panel-bg-color);
+    border-radius: 0.5rem;
+    color: var(--secondary-text-color);
+  }
+
+  .copy-hidden-val {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+  }
